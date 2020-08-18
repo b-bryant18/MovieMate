@@ -10,8 +10,9 @@ $(document).ready(() => {
 //the getMovies function created below.
 
 function getMovies(searchText) {
-    axios.get('http://www.omdbapi.com/?i=tt3896198&apikey=c969a4af&t=' + searchText)
-        //Need to include api key, t= means title + user input
+    axios.get('http://www.omdbapi.com/?i=tt3896198&apikey=c969a4af&s=' + searchText)
+        //Need to include api key
+        //&s= means search + searchInput from user
         .then((response) => {
             console.log(response);
             let movies = response.data.Search;
@@ -38,9 +39,14 @@ function getMovies(searchText) {
 }
 
 function movieSelected(id) {
-    sessionStorage.setItem('movieId, id');
+    sessionStorage.setItem('movieId', id);
     window.location = 'movie.html';
     return false;
+}
+
+function getMovie() {
+    let movieId = sessionStorage.getItem('movieId ');
+
 }
 
 //.catch will log errors to console
