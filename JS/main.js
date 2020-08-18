@@ -10,13 +10,15 @@ $(document).ready(() => {
 //the getMovies function created below.
 
 function getMovies(searchText) {
-    axios.get('http://www.omdbapi.com?s' + searchText)
-        .then((res) => {
-            console.log(res)
+    axios.get('http://www.omdbapi.com/?i=tt3896198&apikey=c969a4af&t=' + searchText)
+        .then((response) => {
+            console.log(response)
         })
         .catch((err) => {
             console.log(err)
         });
 }
 // .then will work if we get data back from axios.get
-//If we get an error back console.log it
+//Need to include api key, t= means title + user input
+//.catch will log errors to console
+
