@@ -37,5 +37,11 @@ function getMovies(searchText) {
         });
 }
 
+function movieSelected(id) {
+    sessionStorage.setItem('movieId, id');
+    window.location = 'movie.html';
+    return false;
+}
+
 //.catch will log errors to console
 
