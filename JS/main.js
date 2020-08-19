@@ -50,6 +50,19 @@ function getMovie() {
     axios.get('http://www.omdbapi.com/?i=tt3896198&apikey=c969a4af&i=' + movieId)
         .then((response) => {
             console.log(response);
+            let movie = response.data;
+
+            let output = `
+            <div class="row>
+            <div class"col-md-4">
+            <img src = "${movie.poster}" class="thumbnail">
+            </div>
+            <div class="col-md-8">
+            </div>
+            </div>
+            `;
+
+            $('#movie').html(output);
         })
         .catch((err) => {
             console.log(err);
