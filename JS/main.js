@@ -25,11 +25,11 @@ function getMovies(searchText) {
                         <img src ="${movie.Poster}">
                              <h5>${movie.Title}</h5>
                                 <a onClick="movieSelected('${movie.imdbID}')" class="btn btn-primary" href="#"> Movie Details </a>
-                        //imdbID needs to be in quotes or console will think it's a var
                     </div>
                 </div>
                 `;
             });
+            //imdbID needs to be in quotes or console will think it's a var
             console.log($('#movies'));
             $('#movies').html(output);
         })
@@ -58,6 +58,16 @@ function getMovie() {
             <img src = "${movie.poster}" class="thumbnail">
             </div>
             <div class="col-md-8">
+            <h2> ${movie.Title}</h2>
+            <ul class="list-group">
+            <li class="list-group-item"><strong>Genre:</strong>${movie.Genre}</li>
+            <li class="list-group-item"><strong>Genre:</strong>${movie.Genre}</li>
+            <li class="list-group-item"><strong>Genre:</strong>${movie.Genre}</li>
+            <li class="list-group-item"><strong>Genre:</strong>${movie.Genre}</li>
+            <li class="list-group-item"><strong>Genre:</strong>${movie.Genre}</li>
+            <li class="list-group-item"><strong>Genre:</strong>${movie.Genre}</li>
+            <li class="list-group-item"><strong>Genre:</strong>${movie.Genre}</li>
+            </ul>
             </div>
             </div>
             `;
