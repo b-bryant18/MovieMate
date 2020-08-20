@@ -1,5 +1,9 @@
-#movies img, #movie img{
-width: 100%;
+#movies img{
+width: 75%;
+}
+
+#movie img {
+    width: 40%;
 }
 @media(min-width:960px) {
     #movies .col-md-3 .well {
