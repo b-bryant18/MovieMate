@@ -49,6 +49,8 @@ function getMovie() {
     // console.log(movieId);
 
     axios.get('http://www.omdbapi.com/?apikey=c969a4af&i=' + movieId)
+        //Removed i=tt3896198 from axios req to get this to work
+        //Changed &s= to &i= to search by ID
         .then((response) => {
             console.log(response);
             let movie = response.data;
