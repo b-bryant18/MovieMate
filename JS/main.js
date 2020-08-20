@@ -30,7 +30,7 @@ function getMovies(searchText) {
                 `;
             });
             //imdbID needs to be in quotes or console will think it's a var
-            console.log($('#movies'));
+
             $('#movies').html(output);
         })
         .catch((err) => {
@@ -45,7 +45,8 @@ function movieSelected(id) {
 }
 
 function getMovie() {
-    let movieId = sessionStorage.getItem('movieId ');
+    let movieId = sessionStorage.getItem('movieId');
+    console.log(movieId);
 
     axios.get('http://www.omdbapi.com/?i=tt3896198&apikey=c969a4af&i=' + movieId)
         .then((response) => {
@@ -82,12 +83,9 @@ function getMovie() {
             `;
 
             $('#movie').html(output);
+            // Puts selected movie info onto page
         })
         .catch((err) => {
             console.log(err);
         });
-
 }
-
-//.catch will log errors to console
-
