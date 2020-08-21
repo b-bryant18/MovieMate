@@ -63,13 +63,13 @@ function getMovie() {
             <div class="col-md-8">
             <h2> ${movie.Title}</h2>
             <ul class="list-group">
-            <li class="list-group-item"><strong>Genre:</strong>${movie.Genre}</li>
-            <li class="list-group-item"><strong>Released:</strong>${movie.Released}</li>
-            <li class="list-group-item"><strong>Rated:</strong>${movie.Rated}</li>
-            <li class="list-group-item"><strong>imdbRating:</strong>${movie.imdbRating}</li>
-            <li class="list-group-item"><strong>Director:</strong>${movie.Director}</li>
-            <li class="list-group-item"><strong>Writer:</strong>${movie.Writer}</li>
-            <li class="list-group-item"><strong>Actors:</strong>${movie.Actors}</li>
+            <li class="list-group-item"><strong>Genre: </strong>${movie.Genre}</li>
+            <li class="list-group-item"><strong>Released: </strong>${movie.Released}</li>
+            <li class="list-group-item"><strong>Rated: </strong>${movie.Rated}</li>
+            <li class="list-group-item"><strong>imdbRating: </strong>${movie.imdbRating}</li>
+            <li class="list-group-item"><strong>Director: </strong>${movie.Director}</li>
+            <li class="list-group-item"><strong>Writer: </strong>${movie.Writer}</li>
+            <li class="list-group-item"><strong>Actors: </strong>${movie.Actors}</li>
             </ul>
             </div>
             </div>
@@ -83,6 +83,7 @@ function getMovie() {
             </div>
             </div>
             `;
+            // movie.Object needs to be capitalized to work
 
             $('#movie').html(output);
             // Puts selected movie info onto page
