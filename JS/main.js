@@ -64,7 +64,7 @@ function getMovie() {
             <img src = "${movie.Poster}" class="thumbnail">
             </div>
 
-            <div class="column">
+            <div class="column" id=movieText>
             <h2> ${movie.Title}</h2>
             <ul class="list-group">
             <li class="list-group-item"><strong>Genre: </strong>${movie.Genre}</li>
@@ -74,9 +74,16 @@ function getMovie() {
             <li class="list-group-item"><strong>Director: </strong>${movie.Director}</li>
             <li class="list-group-item"><strong>Writers: </strong>${movie.Writer}</li>
             <li class="list-group-item"><strong>Actors: </strong>${movie.Actors}</li>
+            <li class="list-group-item"><strong>Plot: </strong> ${movie.Plot}</li>
             </ul>
             </div>
             </div>
+
+            <div class="well">
+            <a href="htpp://imdb.com/title/${movie.imdbID}" target="_blank" class="btn btn-primary">View IMDB</a>
+            <a href="index.html" class="btn btn-default">Go Back To Search</a>
+            </div>
+        
 
             `;
             // movie.Object needs to be capitalized to work
