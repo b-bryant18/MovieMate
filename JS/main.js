@@ -55,12 +55,16 @@ function getMovie() {
             console.log(response);
             let movie = response.data;
 
+            //col-md-4
+            //col-md-8
+
             let output = `
             <div class="row>
-            <div class"col-md-4">
+            <div class"column" id="poster">
             <img src = "${movie.Poster}" class="thumbnail">
             </div>
-            <div id="movieInfo" class="col-md-8">
+
+            <div class="column">
             <h2> ${movie.Title}</h2>
             <ul class="list-group">
             <li class="list-group-item"><strong>Genre: </strong>${movie.Genre}</li>
@@ -74,15 +78,6 @@ function getMovie() {
             </div>
             </div>
 
-            <div id="plotBox" class="row">
-            <div class="well">
-            <h3>Plot:<br> ${movie.Plot}
-            <hr>
-            <a href="htpp://imdb.com/title/${movie.imdbID}" target="_blank" class="btn btn-primary">View IMDB</a>
-            <a href="index.html" class="btn btn-default">Go Back To Search</a>
-            </h3>
-            </div>
-            </div>
             `;
             // movie.Object needs to be capitalized to work
 
@@ -93,3 +88,13 @@ function getMovie() {
             console.log(err);
         });
 }
+
+// <div class="row">
+//             <div class="well">
+//             <h3>Plot:<br> ${movie.Plot}
+//             <hr>
+//             <a href="htpp://imdb.com/title/${movie.imdbID}" target="_blank" class="btn btn-primary">View IMDB</a>
+//             <a href="index.html" class="btn btn-default">Go Back To Search</a>
+//             </h3>
+//             </div>
+//             </div>
