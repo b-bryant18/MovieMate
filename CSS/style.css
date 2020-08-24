@@ -1,3 +1,9 @@
+/* //background image */
+/* Courtesy of Myke Simon @myke_simon */
+body {
+    background-image: url('../Images/cinema.jpg');
+}
+
 /* All search results */
 #movies img{
 width: 75%;
