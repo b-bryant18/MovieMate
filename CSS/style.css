@@ -1,7 +1,9 @@
 /* //background image */
 /* Courtesy of Myke Simon @myke_simon */
 body {
-    background-image: url('../Images/cinema.jpg');
+    /* background: black; */
+    background-image: url(../Images/cinema.jpg);
+   background-size: cover;
 }
 
 /* All search results */
