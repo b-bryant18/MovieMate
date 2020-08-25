@@ -24,6 +24,10 @@ width: 75%;
     color: whitesmoke;
 }
 
+h5 {
+    line-height: 1.8;
+}
+
 /* Single movie */
 #poster {
     float: left;
