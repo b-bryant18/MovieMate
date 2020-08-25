@@ -20,6 +20,10 @@ body {
 width: 75%;
 }
 
+#movies {
+    color: whitesmoke;
+}
+
 /* Single movie */
 #poster {
     float: left;
