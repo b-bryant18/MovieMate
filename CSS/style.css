@@ -8,10 +8,11 @@ body {
 
 #landing-wrapper {
     display: table;
+    height: 710px;
     width: 100%;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
     background-position: center top;
-    height: 100%;
+  
 }
 
 /* All search results */
