@@ -12,7 +12,10 @@ body {
     width: 100%;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
     background-position: center top;
-  
+}
+
+img {
+    margin-top: 13%;
 }
 
 /* All search results */
@@ -33,6 +36,7 @@ h5 {
 #poster {
     float: left;
 }
+
 .row {
     display: flex;
   }
@@ -48,6 +52,14 @@ h5 {
 
 #movieText {
     height: 75%;
+}
+
+.btn-default {
+   background-color: whitesmoke;
+}
+
+.btn-default:hover {
+    color: dodgerblue;
 }
 
 @media(min-width:960px) {
