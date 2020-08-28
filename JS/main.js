@@ -59,7 +59,7 @@ function getMovie() {
             //col-md-8
 
             let output = `
-            <div class="row>
+            <div class="row">
             <div class"column" id="poster">
             <img src = "${movie.Poster}" class="thumbnail">
             </div>
