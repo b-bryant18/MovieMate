@@ -16,8 +16,8 @@ body {
 
 /* Jumbotron image */
 .jumbotron {
-     /* background-image: url(../Images/sunrise.jpg); */
-    background-color:rgba(0, 0, 0, 0.822); 
+     background-image: url(../Images/sunrise.jpg);
+    /* background-color:rgba(0, 0, 0, 0.822);  */
     color: goldenrod;
 }
 
