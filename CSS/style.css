@@ -73,12 +73,20 @@ img {
     color: whitesmoke;
 }
 
+/* Buttons */
+
 .btn-default {
    background-color: whitesmoke;
 }
 
 .btn-default:hover {
     color: dodgerblue;
+}
+
+/* Footer */
+#footer {
+    background-color: rgba(0, 0, 0, 0.822);
+    color: goldenrod;
 }
 
 @media(min-width:960px) {
