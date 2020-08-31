@@ -14,10 +14,6 @@ body {
     background-position: center top;
 }
 
-img {
-    margin-top: 13%;
-}
-
 /* All search results */
 #movies img{
 width: 75%;
@@ -27,14 +23,19 @@ width: 75%;
     color: whitesmoke;
 }
 
+/* Single movie */
+#poster {
+    float: left;
+}
+
 /* Spaces titles down from posters */
 h5 {
     line-height: 1.8;
 }
 
-/* Single movie */
-#poster {
-    float: left;
+/* Search results single movie posters */
+img {
+    margin-top: 13%;
 }
 
 .row {
