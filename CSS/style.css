@@ -14,6 +14,13 @@ body {
     background-position: center top;
 }
 
+/* Jumbotron image */
+.jumbotron {
+    background-image: url(../Images/sunrise.jpg);
+    background-size: cover;
+    color: lightgray;
+}
+
 /* All search results */
 #movies img{
 width: 75%;
