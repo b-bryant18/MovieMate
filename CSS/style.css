@@ -16,9 +16,9 @@ body {
 
 /* Jumbotron image */
 .jumbotron {
-    background-image: url(../Images/sunrise.jpg);
-    background-size: cover;
-    color: lightgray;
+     background-image: url(../Images/sunrise.jpg);
+    /* background: linear-gradient(0.25turn, #38a4ec, #27df36);  */
+    color: gold;
 }
 
 /* All search results */
@@ -40,9 +40,14 @@ h5 {
     line-height: 1.8;
 }
 
+h2 {
+    color: goldenrod;
+}
+
 /* Search results single movie posters */
 img {
-    margin-top: 13%;
+    margin-top: 15%;
+    height: 85%;
 }
 
 .row {
